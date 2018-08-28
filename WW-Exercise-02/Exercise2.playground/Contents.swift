@@ -9,34 +9,53 @@ import UIKit
 /// - In 'printStudents()' print the student's age if it's available. Otherwise, just print the name.
 
 protocol Person {
-    var firstName: String
-    var age: Int?
+    var firstName: String { get set }
+    var age: Int? { get set }
 }
 
 protocol Teaching {
     func printStudents()
-    func addStudents(_ students: [Student])
+    mutating func addStudents(_ students: [Student])
 }
 
 struct Teacher: Person, Teaching {
     private var students = [Student]()
+    var firstName: String
+    var age: Int?
     
-    init() {}
+    init() {
+        self.firstName = ""
+    }
+    
+    init(firstName: String, age: Int?) {
+        self.firstName = firstName
+        self.age = age
+    }
     
     func printStudents() {
         for student in students {
-            print("\(student.firstName) (\(student.age!))")
+            if let age = student.age {
+                print("\(student.firstName) (\(age))")
+            } else {
+                print("\(student.firstName)")
+            }
         }
         print("\(firstName) has \(students.count) students.")
+    }
+    
+    mutating func addStudents(_ students: [Student]) {
+        self.students += students
     }
 }
 
 struct Student: Person {
-    let firstName: String
-    let age: Int?
+    var firstName: String
+    var age: Int?
 }
 
 var teacher = Teacher()
+teacher.firstName = "Alice"
+teacher.age = 31
 
 /// DO NOT MODIFY FROM HERE
 let students = [

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85B59FF821352D0400D0DB15 /* MessagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B59FF721352D0400D0DB15 /* MessagesModel.swift */; };
+		85B59FFD21352F4300D0DB15 /* APIBaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B59FFC21352F4300D0DB15 /* APIBaseRouter.swift */; };
+		85B59FFF21352F6200D0DB15 /* APIEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B59FFE21352F6200D0DB15 /* APIEncoding.swift */; };
+		85B5A00121352F7500D0DB15 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A00021352F7500D0DB15 /* APIEndpoint.swift */; };
+		85B5A00321352F9000D0DB15 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A00221352F9000D0DB15 /* APIManager.swift */; };
+		85B5A00521352FE600D0DB15 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A00421352FE600D0DB15 /* APIMethod.swift */; };
+		85B5A0072135300C00D0DB15 /* APIParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A0062135300C00D0DB15 /* APIParams.swift */; };
+		85B5A0092135302A00D0DB15 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A0082135302A00D0DB15 /* APIPath.swift */; };
+		85B5A00B2135304300D0DB15 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A00A2135304300D0DB15 /* APIResponse.swift */; };
+		85B5A00D213532E900D0DB15 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A00C213532E900D0DB15 /* APIRouter.swift */; };
 		B81FCB9E1D36AD1F003CE14D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FCB9D1D36AD1F003CE14D /* AppDelegate.swift */; };
 		B81FCBA01D36AD1F003CE14D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FCB9F1D36AD1F003CE14D /* ViewController.swift */; };
 		B81FCBA51D36AD1F003CE14D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81FCBA41D36AD1F003CE14D /* Assets.xcassets */; };
@@ -35,6 +45,16 @@
 
 /* Begin PBXFileReference section */
 		0F1C7C08BD3930EA34D7ACB6 /* Pods_WW_Exercise_01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WW_Exercise_01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B59FF721352D0400D0DB15 /* MessagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesModel.swift; sourceTree = "<group>"; };
+		85B59FFC21352F4300D0DB15 /* APIBaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBaseRouter.swift; sourceTree = "<group>"; };
+		85B59FFE21352F6200D0DB15 /* APIEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEncoding.swift; sourceTree = "<group>"; };
+		85B5A00021352F7500D0DB15 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		85B5A00221352F9000D0DB15 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		85B5A00421352FE600D0DB15 /* APIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
+		85B5A0062135300C00D0DB15 /* APIParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParams.swift; sourceTree = "<group>"; };
+		85B5A0082135302A00D0DB15 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
+		85B5A00A2135304300D0DB15 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		85B5A00C213532E900D0DB15 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		B81FCB9A1D36AD1F003CE14D /* WW-Exercise-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WW-Exercise-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81FCB9D1D36AD1F003CE14D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B81FCB9F1D36AD1F003CE14D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +106,46 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		85B59FF621352CE300D0DB15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85B59FF721352D0400D0DB15 /* MessagesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85B59FF921352DEC00D0DB15 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B81FCB9D1D36AD1F003CE14D /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		85B59FFA21352DF900D0DB15 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B81FCB9F1D36AD1F003CE14D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85B59FFB21352E1600D0DB15 /* Networker */ = {
+			isa = PBXGroup;
+			children = (
+				85B59FFC21352F4300D0DB15 /* APIBaseRouter.swift */,
+				85B59FFE21352F6200D0DB15 /* APIEncoding.swift */,
+				85B5A00021352F7500D0DB15 /* APIEndpoint.swift */,
+				85B5A00221352F9000D0DB15 /* APIManager.swift */,
+				85B5A00421352FE600D0DB15 /* APIMethod.swift */,
+				85B5A0062135300C00D0DB15 /* APIParams.swift */,
+				85B5A0082135302A00D0DB15 /* APIPath.swift */,
+				85B5A00A2135304300D0DB15 /* APIResponse.swift */,
+				85B5A00C213532E900D0DB15 /* APIRouter.swift */,
+			);
+			path = Networker;
+			sourceTree = "<group>";
+		};
 		B81FCB911D36AD1F003CE14D = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +171,10 @@
 		B81FCB9C1D36AD1F003CE14D /* WW-Exercise-01 */ = {
 			isa = PBXGroup;
 			children = (
-				B81FCB9D1D36AD1F003CE14D /* AppDelegate.swift */,
-				B81FCB9F1D36AD1F003CE14D /* ViewController.swift */,
+				85B59FFB21352E1600D0DB15 /* Networker */,
+				85B59FFA21352DF900D0DB15 /* Controller */,
+				85B59FF921352DEC00D0DB15 /* Main */,
+				85B59FF621352CE300D0DB15 /* Model */,
 				B81FCBA41D36AD1F003CE14D /* Assets.xcassets */,
 				B81FCBA61D36AD1F003CE14D /* LaunchScreen.storyboard */,
 				B81FCBA91D36AD1F003CE14D /* Info.plist */,
@@ -158,7 +220,6 @@
 				B81FCB971D36AD1F003CE14D /* Frameworks */,
 				B81FCB981D36AD1F003CE14D /* Resources */,
 				29CD32F82739BEF080824E7C /* [CP] Embed Pods Frameworks */,
-				79AC248CC8A73F6773A36E1D /* [CP] Copy Pods Resources */,
 				B8191F4C20052A0200DCF298 /* Swiftlint */,
 			);
 			buildRules = (
@@ -301,21 +362,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WW-Exercise-01/Pods-WW-Exercise-01-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		79AC248CC8A73F6773A36E1D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WW-Exercise-01/Pods-WW-Exercise-01-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B8191F4C20052A0200DCF298 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,8 +401,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85B59FFD21352F4300D0DB15 /* APIBaseRouter.swift in Sources */,
+				85B5A00D213532E900D0DB15 /* APIRouter.swift in Sources */,
+				85B5A0092135302A00D0DB15 /* APIPath.swift in Sources */,
+				85B5A0072135300C00D0DB15 /* APIParams.swift in Sources */,
+				85B5A00121352F7500D0DB15 /* APIEndpoint.swift in Sources */,
+				85B59FFF21352F6200D0DB15 /* APIEncoding.swift in Sources */,
+				85B5A00B2135304300D0DB15 /* APIResponse.swift in Sources */,
 				B81FCBA01D36AD1F003CE14D /* ViewController.swift in Sources */,
+				85B59FF821352D0400D0DB15 /* MessagesModel.swift in Sources */,
+				85B5A00521352FE600D0DB15 /* APIMethod.swift in Sources */,
 				B81FCB9E1D36AD1F003CE14D /* AppDelegate.swift in Sources */,
+				85B5A00321352F9000D0DB15 /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
